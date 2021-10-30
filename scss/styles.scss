@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+
+// Colors
+$textColor: #626262;
+$ctaColor: #00A6FB;
+$lightBlue: #0582CA;
+$mediumBlue: #006494;
+$darkBlue: #003554;           
+$darkest: #051923;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: $textColor;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(to bottom right, $mediumBlue, $lightBlue);
+    position: relative;
+
+    .hero-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 69px;
+        width: 886px;
+        position: absolute;
+        top: 236px;
+        left: 639px;
+        color: #fff;
+
+        .text2 {
+            margin: 27px 0 0 153px;
+        }
+
+        .text3 {
+            text-align: right;
+            margin-top: 27px;
+        }
+    }
+
+    .hero-svg {
+        position: absolute;
+        top: 354px;
+        left: 278px;
+        img {
+            height: 547px;
+        }
+    }
+}
+
+.project {
+    background-color: #ddd;
+    padding: 10px 15px;
+    width: 934px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image buttons";
+    border-radius: 10px;
+    margin-bottom: 20px; 
+
+    .title {
+        font-size: 38px;
+        grid-area: title;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .image {
+        grid-area: image;
+    }
+    
+    .image img {
+        width: 400px;
+    }
+    
+    .description {
+        font-size: 19px;
+        grid-area: description;
+    }
+    
+    .buttons {
+        display: flex;
+        width: 340px;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: buttons;
+    }
+    
+    .live-preview {
+        background-color: $ctaColor;
+        width: 196px;
+        text-align: center;
+        font-size: 19px;
+        padding: 12px 0;
+        color: #fff;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    
+    .buttons img {
+        height: 32px;
+    }
+}
+
+.project:nth-child(even) {
+    grid-template-areas: 
+    "title image"
+    "description image"
+    "buttons image";
+}

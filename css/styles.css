@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #626262;
+}
+
+.home {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#006494), to(#0582CA));
+  background: linear-gradient(to bottom right, #006494, #0582CA);
+  position: relative;
+}
+
+.home .hero-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 69px;
+  width: 886px;
+  position: absolute;
+  top: 236px;
+  left: 639px;
+  color: #fff;
+}
+
+.home .hero-text .text2 {
+  margin: 27px 0 0 153px;
+}
+
+.home .hero-text .text3 {
+  text-align: right;
+  margin-top: 27px;
+}
+
+.home .hero-svg {
+  position: absolute;
+  top: 354px;
+  left: 278px;
+}
+
+.home .hero-svg img {
+  height: 547px;
+}
+
+.project {
+  background-color: #ddd;
+  padding: 10px 15px;
+  width: 934px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+      grid-template-areas: "image title" "image description" "image buttons";
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project .title {
+  font-size: 38px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project .image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: image;
+}
+
+.project .image img {
+  width: 400px;
+}
+
+.project .description {
+  font-size: 19px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+
+.project .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 340px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: buttons;
+}
+
+.project .live-preview {
+  background-color: #00A6FB;
+  width: 196px;
+  text-align: center;
+  font-size: 19px;
+  padding: 12px 0;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.project .buttons img {
+  height: 32px;
+}
+
+.project:nth-child(even) {
+      grid-template-areas: "title image" "description image" "buttons image";
+}
