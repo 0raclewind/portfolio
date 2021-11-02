@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: sans-serif;
   color: #626262;
@@ -16,35 +20,114 @@ body {
   background: -webkit-gradient(linear, left top, right bottom, from(#006494), to(#0582CA));
   background: linear-gradient(to bottom right, #006494, #0582CA);
   position: relative;
+  overflow: hidden;
 }
 
-.home .hero-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 69px;
-  width: 886px;
+.home nav {
   position: absolute;
-  top: 236px;
-  left: 639px;
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 5;
+}
+
+.home nav .brand img {
+  height: 77px;
+}
+
+.home nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 437px;
+}
+
+.home nav .links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #ddd;
+}
+
+.home nav .links a:hover {
   color: #fff;
 }
 
-.home .hero-text .text2 {
+.home nav .links img {
+  width: 42px;
+}
+
+.home .hero {
+  width: 1200px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.home .hero .hero-text, .home .hero .cta, .home .hero .hero-svg, .home .hero .hexagons {
+  position: absolute;
+}
+
+.home .hero .hero-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 69px;
+  width: 886px;
+  top: 236px;
+  left: 279px;
+  color: #fff;
+  z-index: 2;
+}
+
+.home .hero .hero-text .text2 {
   margin: 27px 0 0 153px;
 }
 
-.home .hero-text .text3 {
+.home .hero .hero-text .text3 {
   text-align: right;
   margin-top: 27px;
 }
 
-.home .hero-svg {
-  position: absolute;
-  top: 354px;
-  left: 278px;
+.home .hero .cta {
+  left: 777px;
+  top: 621px;
+  border-radius: 10px;
+  background-color: #00A6FB;
+  padding: 10px 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #fff;
+  z-index: 2;
 }
 
-.home .hero-svg img {
+.home .hero .hero-svg {
+  top: 354px;
+  left: -82px;
+}
+
+.home .hero .hero-svg img {
   height: 547px;
+}
+
+.home .hero .hexagons {
+  z-index: 1;
+  width: 1328px;
+  top: 415px;
+  left: 470px;
+  opacity: .1;
 }
 
 .project {

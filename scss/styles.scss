@@ -14,6 +14,10 @@ $darkest: #051923;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: sans-serif;
     color: $textColor;
@@ -23,34 +27,101 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom right, $mediumBlue, $lightBlue);
     position: relative;
+    overflow: hidden;
 
-    .hero-text {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 69px;
-        width: 886px;
+    nav {
         position: absolute;
-        top: 236px;
-        left: 639px;
-        color: #fff;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 5;
 
-        .text2 {
-            margin: 27px 0 0 153px;
+        .brand img {
+            height: 77px;
         }
 
-        .text3 {
-            text-align: right;
-            margin-top: 27px;
+        .links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 437px;
+
+            a {
+                font-family: 'Poppins', sans-serif;
+                font-size: 28px;
+                text-transform: uppercase;
+                color: #ddd;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+            img {
+                width: 42px;
+            }
         }
     }
 
-    .hero-svg {
-        position: absolute;
-        top: 354px;
-        left: 278px;
-        img {
-            height: 547px;
+    .hero {
+        width: 1200px;
+        height: 100%;
+        position: relative;
+        margin: auto;
+
+        .hero-text, .cta, .hero-svg, .hexagons {
+            position: absolute;
+        }
+
+        .hero-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 69px;
+            width: 886px;
+            top: 236px;
+            left: 279px;
+            color: #fff;
+            z-index: 2;
+    
+            .text2 {
+                margin: 27px 0 0 153px;
+            }
+    
+            .text3 {
+                text-align: right;
+                margin-top: 27px;
+            }
+        }
+
+        .cta {
+            left: 777px;
+            top: 621px;
+            border-radius: 10px;
+            background-color: $ctaColor;
+            padding: 10px 28px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            color: #fff;
+            z-index: 2;
+        }
+    
+        .hero-svg {
+            top: 354px;
+            left: -82px;
+            img {
+                height: 547px;
+            }
+        }
+        .hexagons {
+            z-index: 1;
+            width: 1328px;
+            top: 415px;
+            left: 470px;
+            opacity: .1;
         }
     }
+
 }
 
 .project {
