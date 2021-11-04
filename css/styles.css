@@ -15,6 +15,23 @@ body {
   color: #626262;
 }
 
+h1 {
+  font-family: 'Poppins';
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 .home {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right bottom, from(#006494), to(#0582CA));
@@ -37,6 +54,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 5;
+  max-width: 1400px;
+  padding: 0 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .home nav .brand img {
@@ -61,14 +83,15 @@ body {
   font-size: 28px;
   text-transform: uppercase;
   color: #ddd;
+  height: 42px;
 }
 
 .home nav .links a:hover {
   color: #fff;
 }
 
-.home nav .links img {
-  width: 42px;
+.home nav .links i {
+  font-size: 42px;
 }
 
 .home .hero {
@@ -130,47 +153,63 @@ body {
   opacity: .1;
 }
 
-.project {
+.portfolio {
+  margin: 40px auto;
+  width: 1200px;
+  padding: 0 50px;
+}
+
+.portfolio h1 {
+  color: #7a7a7a;
+  margin-bottom: 30px;
+}
+
+.portfolio .project {
   background-color: #ddd;
-  padding: 10px 15px;
+  padding: 10px 40px 0 40px;
   width: 934px;
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-      grid-template-areas: "image title" "image description" "image buttons";
-  border-radius: 10px;
-  margin-bottom: 20px;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+      grid-template-areas: "title image" "description image" "buttons image" "notice image";
+  -ms-grid-columns: 50% 45%;
+      grid-template-columns: 50% 45%;
+  -ms-grid-rows: 30% 43% 15% 12%;
+      grid-template-rows: 30% 43% 15% 12%;
+  border-radius: 30px;
+  margin-bottom: 70px;
+  position: relative;
+  margin-left: auto;
+  font-family: 'Poppins';
 }
 
-.project .title {
-  font-size: 38px;
+.portfolio .project h2 {
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: title;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.project .image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
-  grid-area: image;
+  grid-area: title;
 }
 
-.project .image img {
+.portfolio .project .image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: image;
+  text-align: center;
+}
+
+.portfolio .project .image img {
   width: 400px;
 }
 
-.project .description {
+.portfolio .project .description {
   font-size: 19px;
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: description;
 }
 
-.project .buttons {
+.portfolio .project .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,25 +221,80 @@ body {
       -ms-flex-align: center;
           align-items: center;
   -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: buttons;
 }
 
-.project .live-preview {
+.portfolio .project .live-preview {
   background-color: #00A6FB;
   width: 196px;
   text-align: center;
   font-size: 19px;
-  padding: 12px 0;
+  padding: 6px 0;
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
 }
 
-.project .buttons img {
-  height: 32px;
+.portfolio .project .live-preview:hover {
+  background-color: #0582CA;
 }
 
-.project:nth-child(even) {
-      grid-template-areas: "title image" "description image" "buttons image";
+.portfolio .project .buttons i {
+  font-size: 32px;
+}
+
+.portfolio .project .fa-github {
+  color: #555;
+}
+
+.portfolio .project .fa-github:hover {
+  color: #777;
+}
+
+.portfolio .project .fa-youtube {
+  color: #f31e1e;
+}
+
+.portfolio .project .fa-youtube:hover {
+  color: #ff4949;
+}
+
+.portfolio .project .notice {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: notice;
+  color: #c36b18;
+  margin-left: 20px;
+}
+
+.portfolio .project .footer {
+  position: absolute;
+  bottom: -34px;
+  background-color: #0582CA;
+  color: #eee;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 70px;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.portfolio .project:nth-child(even) {
+  margin-left: 0;
+  -ms-grid-columns: 45% 50%;
+      grid-template-columns: 45% 50%;
+      grid-template-areas: "image title" "image description" "image buttons" "image notice";
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1200px) {
+  .home .hero {
+    width: 992px;
+  }
 }
