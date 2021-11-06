@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +11,11 @@ a {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #626262;
 }
 
 h1 {
-  font-family: 'Poppins';
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
@@ -79,7 +78,6 @@ h2 {
 }
 
 .home nav .links a {
-  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   color: #ddd;
@@ -130,7 +128,6 @@ h2 {
   border-radius: 10px;
   background-color: #00A6FB;
   padding: 10px 28px;
-  font-family: 'Poppins', sans-serif;
   font-size: 22px;
   color: #fff;
   z-index: 2;
@@ -165,7 +162,7 @@ h2 {
 }
 
 .portfolio .project {
-  background-color: #ddd;
+  background-color: #eee;
   padding: 10px 40px 0 40px;
   width: 934px;
   display: -ms-grid;
@@ -175,13 +172,12 @@ h2 {
       grid-template-areas: "title image" "description image" "buttons image" "notice image";
   -ms-grid-columns: 50% 45%;
       grid-template-columns: 50% 45%;
-  -ms-grid-rows: 30% 43% 15% 12%;
-      grid-template-rows: 30% 43% 15% 12%;
+  -ms-grid-rows: 30% 45% 15% 10%;
+      grid-template-rows: 30% 45% 15% 10%;
   border-radius: 30px;
   margin-bottom: 70px;
   position: relative;
   margin-left: auto;
-  font-family: 'Poppins';
 }
 
 .portfolio .project h2 {
@@ -266,6 +262,7 @@ h2 {
   grid-area: notice;
   color: #c36b18;
   margin-left: 20px;
+  font-size: 14px;
 }
 
 .portfolio .project .footer {
@@ -287,6 +284,25 @@ h2 {
   -ms-grid-columns: 45% 50%;
       grid-template-columns: 45% 50%;
       grid-template-areas: "image title" "image description" "image buttons" "image notice";
+}
+
+.about {
+  background: -webkit-gradient(linear, left top, right bottom, from(#003554), to(#006494));
+  background: linear-gradient(to bottom right, #003554, #006494);
+  color: #fff;
+}
+
+.about .about-me, .about .contact {
+  width: 1200px;
+  margin: auto;
+  padding: 20px 160px;
+}
+
+.about .about-me .text {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 50px;
 }
 
 /* Extra small devices (phones, 600px and down) */

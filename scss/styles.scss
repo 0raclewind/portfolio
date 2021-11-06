@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500&display=swap');
 
 // Colors
 $textColor: #626262;
@@ -19,12 +19,11 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: $textColor;
 }
 
 h1 {
-    font-family: 'Poppins';
     font-size: 50px;
     text-transform: uppercase;
     text-align: center;
@@ -70,7 +69,6 @@ h2 {
             width: 437px;
             
             a {
-                font-family: 'Poppins', sans-serif;
                 font-size: 28px;
                 text-transform: uppercase;
                 color: #ddd;
@@ -122,7 +120,6 @@ h2 {
             border-radius: 10px;
             background-color: $ctaColor;
             padding: 10px 28px;
-            font-family: 'Poppins', sans-serif;
             font-size: 22px;
             color: #fff;
             z-index: 2;
@@ -158,7 +155,7 @@ h2 {
     }
     
     .project {
-        background-color: #ddd;
+        background-color: #eee;
         padding: 10px 40px 0 40px;
         width: 934px;
         display: grid;
@@ -169,12 +166,11 @@ h2 {
         "buttons image"
         "notice image";
         grid-template-columns: 50% 45%;
-        grid-template-rows: 30% 43% 15% 12%; 
+        grid-template-rows: 30% 45% 15% 10%; 
         border-radius: 30px;
         margin-bottom: 70px;
         position: relative;
         margin-left: auto;
-        font-family: 'Poppins';
         
         h2 {
             grid-area: title;
@@ -238,6 +234,7 @@ h2 {
             grid-area: notice;
             color: #c36b18;
             margin-left: 20px;
+            font-size: 14px;
         }
         
         .footer {
@@ -263,6 +260,24 @@ h2 {
         "image description"
         "image buttons"
         "image notice";
+    }
+}
+
+.about {
+    background: linear-gradient(to bottom right, $darkBlue, $mediumBlue);
+    color: #fff;
+    
+    .about-me, .contact {
+        width: 1200px;
+        margin: auto;
+        padding: 20px 160px;
+    }
+
+    .about-me .text {
+        font-size: 26px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        line-height: 50px;
     }
 }
 
