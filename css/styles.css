@@ -327,6 +327,28 @@ h2 {
   border-radius: 10px;
   padding: 20px 0 0 30px;
   font-size: 30px;
+  color: #fff;
+}
+
+.about .contact form input:focus {
+  outline: none;
+  border-bottom: 3px solid #00A6FB;
+}
+
+.about .contact form input:focus ~ label {
+  color: #003554;
+  font-size: 18px;
+  top: 0;
+  left: 20px;
+  font-weight: 600;
+}
+
+.about .contact form input:valid ~ label {
+  color: #003554;
+  top: 0;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .about .contact form label {
@@ -336,6 +358,8 @@ h2 {
   color: #003554;
   font-size: 30px;
   font-weight: 500;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .about .contact form .name {
@@ -353,6 +377,24 @@ h2 {
 .about .contact form .message {
   width: 868px;
   height: 346px;
+}
+
+.about .contact form .submit {
+  background-color: #00A6FB;
+  border-radius: 10px;
+  height: 64px;
+  width: 237px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
