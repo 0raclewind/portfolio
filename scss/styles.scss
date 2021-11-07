@@ -279,6 +279,51 @@ h2 {
         letter-spacing: 1.5px;
         line-height: 50px;
     }
+
+    .contact form {
+        display: flex;
+        flex-direction: column;
+
+        .input-group {
+            position: relative;
+        }
+
+        input {
+            height: 62px;
+            background-color: #fff5;
+            border: none;
+            margin-bottom: 24px;
+            border-radius: 10px;
+            padding: 20px 0 0 30px;
+            font-size: 30px;
+        }
+
+        label {
+            position: absolute;
+            top: 20px; 
+            left: 30px;
+            color: $darkBlue;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .name {
+            width: 423px;
+        }
+
+        .email {
+            width: 583px;
+        }
+
+        .subject {
+            width: 747px;
+        }
+
+        .message {
+            width: 868px;
+            height: 346px;
+        }
+    }
 }
 
 @import 'media_queries';

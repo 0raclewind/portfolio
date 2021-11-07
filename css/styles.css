@@ -305,6 +305,56 @@ h2 {
   line-height: 50px;
 }
 
+.about .contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about .contact form .input-group {
+  position: relative;
+}
+
+.about .contact form input {
+  height: 62px;
+  background-color: #fff5;
+  border: none;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  padding: 20px 0 0 30px;
+  font-size: 30px;
+}
+
+.about .contact form label {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: #003554;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.about .contact form .name {
+  width: 423px;
+}
+
+.about .contact form .email {
+  width: 583px;
+}
+
+.about .contact form .subject {
+  width: 747px;
+}
+
+.about .contact form .message {
+  width: 868px;
+  height: 346px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -314,3 +364,4 @@ h2 {
     width: 992px;
   }
 }
+/*# sourceMappingURL=styles.css.map */
