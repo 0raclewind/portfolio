@@ -292,10 +292,18 @@ h2 {
   color: #fff;
 }
 
+.about h1 {
+  margin-bottom: 20px;
+}
+
 .about .about-me, .about .contact {
   width: 1200px;
   margin: auto;
-  padding: 20px 160px;
+  padding: 50px 160px;
+}
+
+.about .about-me {
+  padding-bottom: 0;
 }
 
 .about .about-me .text {
@@ -319,9 +327,9 @@ h2 {
   position: relative;
 }
 
-.about .contact form input {
+.about .contact form input, .about .contact form textarea {
   height: 62px;
-  background-color: #fff5;
+  background-color: #003554;
   border: none;
   margin-bottom: 24px;
   border-radius: 10px;
@@ -330,32 +338,23 @@ h2 {
   color: #fff;
 }
 
-.about .contact form input:focus {
+.about .contact form input:focus, .about .contact form textarea:focus {
   outline: none;
-  border-bottom: 3px solid #00A6FB;
 }
 
-.about .contact form input:focus ~ label {
-  color: #003554;
+.about .contact form input:focus ~ label, .about .contact form input:valid ~ label, .about .contact form textarea:focus ~ label, .about .contact form textarea:valid ~ label {
+  color: #00A6FB;
   font-size: 18px;
   top: 0;
   left: 20px;
-  font-weight: 600;
-}
-
-.about .contact form input:valid ~ label {
-  color: #003554;
-  top: 0;
-  left: 20px;
-  font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .about .contact form label {
   position: absolute;
   top: 20px;
   left: 30px;
-  color: #003554;
+  color: #fff6;
   font-size: 30px;
   font-weight: 500;
   -webkit-transition: 300ms ease-in-out;
@@ -377,24 +376,33 @@ h2 {
 .about .contact form .message {
   width: 868px;
   height: 346px;
+  padding: 30px;
+  resize: none;
 }
 
-.about .contact form .submit {
+.about .contact form button {
   background-color: #00A6FB;
   border-radius: 10px;
   height: 64px;
-  width: 237px;
+  width: 200px;
   font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 500;
+  font-weight: 600;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.about .contact form button:hover {
+  background-color: #0582CA;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -406,4 +414,3 @@ h2 {
     width: 992px;
   }
 }
-/*# sourceMappingURL=styles.css.map */
