@@ -31,6 +31,14 @@ h2 {
   letter-spacing: 2px;
 }
 
+h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
 .home {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right bottom, from(#006494), to(#0582CA));
@@ -403,6 +411,41 @@ h2 {
 
 .about .contact form button:hover {
   background-color: #0582CA;
+}
+
+.footer {
+  background-color: #051923;
+  color: #ddd;
+  padding: 20px 0 10px 0;
+}
+
+.footer .links {
+  width: 433px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  color: #bbb;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.footer .links a .icon {
+  width: 40px;
+  text-align: center;
+}
+
+.footer .links a:hover {
+  color: #fff;
 }
 
 /* Extra small devices (phones, 600px and down) */
