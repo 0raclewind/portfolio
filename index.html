@@ -10,15 +10,15 @@
 </head>
 
 <body>
-  <div class="home">
+  <div class="home" id="home">
     <nav>
       <div class="brand">
         <img src="./svg/valdothecoder.svg">
       </div>
       <div class="links">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/0raclewind" _target="blank"><i class="fab fa-github"></i></a>
       </div>
     </nav>
     <div class="hero">
@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <h1>Portfolio</h1>
     <div class="project">
       <h2>CRYPTOGRAM</h2>
@@ -100,7 +100,7 @@
     </div>
   </div>
   <div class="about">
-    <div class="about-me">
+    <div class="about-me" id="about">
       <h1>About me</h1>
       <div class="text">Open minded, coffee driven front-end web developer with, belief in life-long learning. Passionate about computer technology, devoted to coding and information architecture.</div>
     </div>
@@ -148,6 +148,10 @@
        </a>
     </div>
   </div>
+  <a href="#home" class="scroll-top"><i class="fas fa-arrow-circle-up"></i></a>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
