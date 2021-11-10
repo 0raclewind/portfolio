@@ -153,9 +153,9 @@ h3 {
 
 
 .portfolio {
-    margin: 40px auto;
+    margin: auto;
     width: 1200px;
-    padding: 0 50px;
+    padding: 40px 50px;
     
     h1 {
         color: #7a7a7a;
@@ -405,6 +405,17 @@ h3 {
                 color: #fff;
             }
         }
+    }
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+
+    i {
+        color: #aaa;
+        font-size: 50px;
     }
 }
 

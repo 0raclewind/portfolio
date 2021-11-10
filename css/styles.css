@@ -159,9 +159,9 @@ h3 {
 }
 
 .portfolio {
-  margin: 40px auto;
+  margin: auto;
   width: 1200px;
-  padding: 0 50px;
+  padding: 40px 50px;
 }
 
 .portfolio h1 {
@@ -446,6 +446,17 @@ h3 {
 
 .footer .links a:hover {
   color: #fff;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 100px;
+  right: 150px;
+}
+
+.scroll-top i {
+  color: #aaa;
+  font-size: 50px;
 }
 
 /* Extra small devices (phones, 600px and down) */
