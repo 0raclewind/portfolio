@@ -45,6 +45,7 @@ h3 {
   background: linear-gradient(to bottom right, #006494, #0582CA);
   position: relative;
   overflow: hidden;
+  z-index: 2;
 }
 
 .home nav {
@@ -315,10 +316,10 @@ h3 {
 }
 
 .about .about-me .text {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 1.5px;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .about .contact form {
@@ -336,14 +337,15 @@ h3 {
 }
 
 .about .contact form input, .about .contact form textarea {
-  height: 62px;
+  height: 50px;
   background-color: #003554;
   border: none;
   margin-bottom: 24px;
   border-radius: 10px;
-  padding: 20px 0 0 30px;
-  font-size: 30px;
+  padding: 20px 0 5px 30px;
+  font-size: 20px;
   color: #fff;
+  font-family: 'Poppins';
 }
 
 .about .contact form input:focus, .about .contact form textarea:focus {
@@ -353,20 +355,23 @@ h3 {
 .about .contact form input:focus ~ label, .about .contact form input:valid ~ label, .about .contact form textarea:focus ~ label, .about .contact form textarea:valid ~ label {
   color: #00A6FB;
   font-size: 18px;
-  top: 0;
+  top: -10px;
   left: 20px;
   font-weight: 500;
 }
 
 .about .contact form label {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 30px;
   color: #fff6;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
+  background-color: #003554;
+  padding: 0px 10px;
+  border-radius: 10px;
 }
 
 .about .contact form .name {
@@ -383,8 +388,8 @@ h3 {
 
 .about .contact form .message {
   width: 868px;
-  height: 346px;
-  padding: 30px;
+  height: 246px;
+  padding: 20px 30px;
   resize: none;
 }
 
@@ -452,6 +457,7 @@ h3 {
   position: fixed;
   bottom: 100px;
   right: 150px;
+  z-index: 1;
 }
 
 .scroll-top i {
