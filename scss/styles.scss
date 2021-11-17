@@ -108,7 +108,7 @@ h3 {
             font-family: 'Montserrat', sans-serif;
             font-size: 69px;
             width: 886px;
-            top: 100px;
+            top: 50px;
             left: 279px;
             color: #fff;
             z-index: 2;
@@ -275,6 +275,7 @@ h3 {
 .about {
     background: linear-gradient(to bottom right, $darkBlue, $mediumBlue);
     color: #fff;
+    padding-top: 1px;
     
     h1 {
         margin-bottom: 20px;
@@ -325,8 +326,9 @@ h3 {
                 color: $ctaColor;
                 font-size: 18px;
                 top: -10px;
-                left: 20px;
+                left: 0px;
                 font-weight: 500;
+                padding: 0 20px;
             }
         }
 
@@ -339,7 +341,7 @@ h3 {
             font-weight: 500;
             transition: 300ms ease-in-out;
             background-color: $darkBlue;
-            padding: 0px 10px;
+            // padding: 0px 10px;
             border-radius: 10px;
         }
 

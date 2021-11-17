@@ -116,7 +116,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 69px;
   width: 886px;
-  top: 100px;
+  top: 50px;
   left: 279px;
   color: #fff;
   z-index: 2;
@@ -299,6 +299,7 @@ h3 {
   background: -webkit-gradient(linear, left top, right bottom, from(#003554), to(#006494));
   background: linear-gradient(to bottom right, #003554, #006494);
   color: #fff;
+  padding-top: 1px;
 }
 
 .about h1 {
@@ -356,8 +357,9 @@ h3 {
   color: #00A6FB;
   font-size: 18px;
   top: -10px;
-  left: 20px;
+  left: 0px;
   font-weight: 500;
+  padding: 0 20px;
 }
 
 .about .contact form label {
@@ -370,7 +372,6 @@ h3 {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   background-color: #003554;
-  padding: 0px 10px;
   border-radius: 10px;
 }
 
