@@ -471,7 +471,48 @@ h3 {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
+  .home {
+    width: 100%;
+  }
+  .home nav {
+    height: 92px;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .home nav .brand img {
+    height: 53px;
+  }
+  .home nav .links a {
+    font-size: 20px;
+  }
   .home .hero {
-    width: 992px;
+    width: 100%;
+  }
+  .home .hero .hero-text {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .home .hero .hero-svg {
+    top: 400px;
+  }
+  .home .hero .cta {
+    left: 650px;
+    top: 500px;
+  }
+  .home .hero .hexagons {
+    top: 500px;
+    left: 200px;
+  }
+  .portfolio {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .about .about-me, .about .contact {
+    width: 900px;
+    padding: 50px 50px;
+  }
+  .about .contact form .message {
+    width: 100%;
   }
 }
