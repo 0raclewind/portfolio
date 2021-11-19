@@ -459,10 +459,17 @@ h3 {
   bottom: 50px;
   right: 50px;
   z-index: 1;
+  background-color: #00A6FB;
+  padding: 10px;
+  width: 70px;
+  height: 70;
+  text-align: center;
+  border-radius: 50%;
+  opacity: .8;
 }
 
 .scroll-top i {
-  color: #aaa;
+  color: #fff;
   font-size: 50px;
 }
 

@@ -420,9 +420,16 @@ h3 {
     bottom: 50px;
     right: 50px;
     z-index: 1;
+    background-color: $ctaColor;
+    padding: 10px;
+    width: 70px;
+    height: 70;
+    text-align: center;
+    border-radius: 50%;
+    opacity: .8;
 
     i {
-        color: #aaa;
+        color: #fff;
         font-size: 50px;
     }
 }
