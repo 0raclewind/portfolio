@@ -8,30 +8,14 @@
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 992px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (large tablets, 992px and up) */
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
     .home {
         width: 100%;
 
         nav {
-            height: 92px;
             width: 100%;
             padding: 0 30px;
-
-            .brand img {
-                height: 53px;
-            }
-
-            .links {
-                a {
-                    font-size: 20px;
-                }
-            }
         }
 
         .hero {
@@ -74,5 +58,91 @@
                 width: 100%;
             }
         }
+    }
+}
+
+/* Medium devices (smaller tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (orientation: portrait) {
+    .home {
+        nav {
+            .brand img {
+                height: 60px;
+            }
+        }
+
+        .hero {
+            .hero-text {
+                width: 80%;
+                font-size: 40px;
+            }
+
+            .hero-svg {
+                top: 250px;
+
+                img {
+                    height: 500px;
+                }
+            }
+
+            .cta {
+                left: 500px;
+                top: 350px;
+            }
+
+            .hexagons {
+                top: 450px;
+
+                img {
+                    height: 600px;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .project {
+            width: 663px;
+            padding: 8px 20px 0 20px;
+
+            .image img {
+                width: 280px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .buttons {
+                width: 280px;
+
+                .live-preview {
+                    width: 145px;
+                    font-size: 14px;
+                }
+
+                i {
+                    font-size: 28px;
+                }
+            }
+
+            .notice {
+                font-size: 12px;
+            }
+
+            .footer {
+                font-size: 14px;
+                bottom: -25px;
+                padding-top: 77px;
+            }
+        }
+
     }
 }

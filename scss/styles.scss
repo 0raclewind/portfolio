@@ -188,11 +188,11 @@ h3 {
         .image {
             grid-area: image;
             text-align: center;
+            img {
+                width: 400px;
+            }
         }
         
-        .image img {
-            width: 400px;
-        }
         
         .description {
             font-size: 19px;
@@ -212,6 +212,7 @@ h3 {
             width: 196px;
             text-align: center;
             font-size: 19px;
+            letter-spacing: 1px;
             padding: 6px 0;
             color: #fff;
             border-radius: 10px;

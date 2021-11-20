@@ -235,6 +235,7 @@ h3 {
   width: 196px;
   text-align: center;
   font-size: 19px;
+  letter-spacing: 1px;
   padding: 6px 0;
   color: #fff;
   border-radius: 10px;
@@ -475,22 +476,14 @@ h3 {
 
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1200px) {
+/* Large devices (large tablets, 992px and up) */
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
   .home {
     width: 100%;
   }
   .home nav {
-    height: 92px;
     width: 100%;
     padding: 0 30px;
-  }
-  .home nav .brand img {
-    height: 53px;
-  }
-  .home nav .links a {
-    font-size: 20px;
   }
   .home .hero {
     width: 100%;
@@ -521,5 +514,66 @@ h3 {
   }
   .about .contact form .message {
     width: 100%;
+  }
+}
+
+/* Medium devices (smaller tablets, 768px and up) */
+@media only screen and (max-width: 992px) and (orientation: portrait) {
+  .home nav .brand img {
+    height: 60px;
+  }
+  .home .hero .hero-text {
+    width: 80%;
+    font-size: 40px;
+  }
+  .home .hero .hero-svg {
+    top: 250px;
+  }
+  .home .hero .hero-svg img {
+    height: 500px;
+  }
+  .home .hero .cta {
+    left: 500px;
+    top: 350px;
+  }
+  .home .hero .hexagons {
+    top: 450px;
+  }
+  .home .hero .hexagons img {
+    height: 600px;
+  }
+  .portfolio h1 {
+    font-size: 40px;
+  }
+  .portfolio h2 {
+    font-size: 30px;
+  }
+  .portfolio .project {
+    width: 663px;
+    padding: 8px 20px 0 20px;
+  }
+  .portfolio .project .image img {
+    width: 280px;
+  }
+  .portfolio .project .description {
+    font-size: 14px;
+  }
+  .portfolio .project .buttons {
+    width: 280px;
+  }
+  .portfolio .project .buttons .live-preview {
+    width: 145px;
+    font-size: 14px;
+  }
+  .portfolio .project .buttons i {
+    font-size: 28px;
+  }
+  .portfolio .project .notice {
+    font-size: 12px;
+  }
+  .portfolio .project .footer {
+    font-size: 14px;
+    bottom: -25px;
+    padding-top: 77px;
   }
 }
