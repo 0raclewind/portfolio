@@ -509,8 +509,19 @@ h3 {
     padding: 40px 20px;
   }
   .about .about-me, .about .contact {
-    width: 900px;
-    padding: 50px 50px;
+    width: 95%;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about .contact form .name {
+    width: 55%;
+  }
+  .about .contact form .email {
+    width: 70%;
+  }
+  .about .contact form .subject {
+    width: 85%;
   }
   .about .contact form .message {
     width: 100%;
@@ -519,6 +530,12 @@ h3 {
 
 /* Medium devices (smaller tablets, 768px and up) */
 @media only screen and (max-width: 992px) and (orientation: portrait) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
   .home nav .brand img {
     height: 60px;
   }
@@ -541,12 +558,6 @@ h3 {
   }
   .home .hero .hexagons img {
     height: 600px;
-  }
-  .portfolio h1 {
-    font-size: 40px;
-  }
-  .portfolio h2 {
-    font-size: 30px;
   }
   .portfolio .project {
     width: 663px;
@@ -577,3 +588,10 @@ h3 {
     padding-top: 77px;
   }
 }
+
+@media only screen and (max-height: 840px) and (orientation: landscape) {
+  .home .hero {
+    margin: 5vh auto;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
