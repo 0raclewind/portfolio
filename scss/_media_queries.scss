@@ -251,6 +251,7 @@
 
     .portfolio {
         padding: 10px;
+        max-width: 450px;
 
         .project {
             grid-template-areas: 
@@ -262,6 +263,7 @@
             grid-template-columns: 100% !important;
             grid-template-rows: 50% 10% 20% 15% 5% !important;
             width: 100%;
+            max-width: 355px;
             padding: 8px 15px;
             height: 420px;
 
