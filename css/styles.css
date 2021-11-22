@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #626262;
@@ -665,6 +669,7 @@ h3 {
   }
   .portfolio {
     padding: 10px;
+    max-width: 450px;
   }
   .portfolio .project {
         grid-template-areas: "image" "title" "description" "buttons" "notice" !important;
@@ -673,6 +678,7 @@ h3 {
     -ms-grid-rows: 50% 10% 20% 15% 5% !important;
         grid-template-rows: 50% 10% 20% 15% 5% !important;
     width: 100%;
+    max-width: 355px;
     padding: 8px 15px;
     height: 420px;
   }
@@ -705,4 +711,3 @@ h3 {
     grid-area: notice;
   }
 }
-/*# sourceMappingURL=styles.css.map */
