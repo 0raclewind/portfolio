@@ -156,15 +156,6 @@
     }
 }
 
-// Small laptops height fix
-@media only screen and (max-height: 840px) and (orientation: landscape) {
-    .home {
-        .hero {
-            margin: 5vh auto;
-        }
-    }
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
@@ -175,8 +166,12 @@
         font-size: 20px;
     }
 
+    h3 {
+        font-size: 18px;
+    }
+
     .home {
-        height: 600px;
+        height: 700px;
 
         nav {
             height: 80px;
@@ -206,14 +201,15 @@
 
         .hero {
             height: 400px;
-            margin-top: 50px;
+            margin-top: 70px;
 
             .hero-text {
                 font-size: 26px;
                 width: 90%;
+                max-width: 400px;
 
                 .text2 {
-                    margin: 14px 0 0 52px;
+                    margin: 14px 0 0 20%;
                 }
 
                 .text3 {
@@ -230,7 +226,7 @@
             }
 
             .hero-svg {
-                top: 220px;
+                top: 250px;
                 left: -40px;
 
                 img {
@@ -240,7 +236,7 @@
 
             .hexagons {
                 left: 40px;
-                top: 270px;
+                top: 370px;
 
                 img {
                     width: 800px;
@@ -261,14 +257,16 @@
                 "buttons"
                 "notice" !important;
             grid-template-columns: 100% !important;
-            grid-template-rows: 50% 10% 20% 15% 5% !important;
+            grid-template-rows: 2fr 1fr 2fr 1fr !important;
             width: 100%;
             max-width: 355px;
             padding: 8px 15px;
             height: 420px;
+            border-radius: 15px;
 
             h2 {
                 grid-area: title;
+                margin-top: 0;
             }
 
             .image {
@@ -285,12 +283,107 @@
 
             .buttons {
                 grid-area: buttons;
+                width: 250px;
             }
 
             .notice {
                 grid-area: notice;
             }
+
+            .footer {
+                font-size: 10px;
+                border-radius: 15px;
+                bottom: -18px;
+                padding-top: 84px;
+            }
         }
 
     }
+
+    .about {
+        .about-me, .contact {
+            width: 95%;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .about-me .text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .contact {
+            padding-bottom: 40px;
+
+            form {
+                input, textarea {
+                    height: 30px;
+                    font-size: 14px;
+                    padding: 15px 0 5px 15px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+
+                    &:focus ~ label, &:valid ~ label {
+                        font-size: 12px;
+                        top: -6px;
+                        left: 0px;
+                        font-weight: 500;
+                        padding: 0 10px;
+                    }
+                }
+
+                label {
+                    top: 8px;
+                    left: 15px;
+                    font-size: 14px;
+                    border-radius: 5px;
+                }
+
+                .message {
+                    padding: 15px 0 5px 15px;
+                    height:  150px;
+                }
+
+                button {
+                    height: 30px;
+                    width: 90px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding: 10px 0;
+
+        .links {
+            width: 310px;
+
+            a {
+                font-size: 14px;
+                margin: 2px 0;
+            }
+        }
+    }
+
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+
+        i {
+            font-size: 20px;
+        }
+    }
 }
+
+// // Small laptops height fix
+// @media only screen and (max-height: 840px) and (orientation: landscape) {
+//     .home {
+//         .hero {
+//             margin: 5vh auto;
+//         }
+//     }
+// }
