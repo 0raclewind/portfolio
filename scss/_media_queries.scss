@@ -3,8 +3,8 @@
 
 }
 
-/* Large devices (large tablets, 992px and up) */
-@media only screen and (max-width: 1200px) and (orientation: portrait) {
+/* Extra Large devices (Large Laptops up to 1440px) */
+@media only screen and (max-width: 1440px) {
     .home {
         width: 100%;
 
@@ -14,7 +14,8 @@
         }
 
         .hero {
-            width: 100%;
+            margin-top: 10vh;
+            width: 1024px;
             
             .hero-text {
                 left: 50%;
@@ -22,24 +23,20 @@
             }
 
             .hero-svg {
-                top: 400px;
+                top: 250px;
+                left: -150px;
             }
 
             .cta {
                 left: 650px;
-                top: 500px;
+                top: 400px;
             }
 
             .hexagons {
-                top: 500px;
+                top: 300px;
                 left: 200px;
             }
         }
-    }
-
-    .portfolio {
-        width: 100%;
-        padding: 40px 20px;
     }
 
     .about {
@@ -70,8 +67,9 @@
     }
 }
 
-/* Medium devices (smaller tablets, 768px and up) */
-@media only screen and (max-width: 992px) and (orientation: portrait) {
+
+/* Large devices (Laptops up to 1024px) */
+@media only screen and (max-width: 1024px) {
     h1 {
         font-size: 40px;
     }
@@ -84,6 +82,10 @@
         nav {
             .brand img {
                 height: 60px;
+            }
+
+            .links {
+                width: 400px;
             }
         }
 
@@ -108,10 +110,6 @@
 
             .hexagons {
                 top: 450px;
-
-                img {
-                    height: 600px;
-                }
             }
         }
     }
@@ -156,8 +154,8 @@
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Medium devices (Tablets up to 768px) */
+@media only screen and (max-width: 768px) {
     h1 {
         font-size: 30px;
     }
