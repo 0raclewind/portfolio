@@ -85,7 +85,7 @@ h3 {
                 font-size: 28px;
                 text-transform: uppercase;
                 color: #ddd;
-                height: 42px;
+                display: flex;
 
                 &:hover {
                     color: #fff;
@@ -118,7 +118,8 @@ h3 {
             z-index: 2;
     
             .text2 {
-                margin: 27px 0 0 153px;
+                margin-top: 27px;
+                text-align: center;
             }
     
             .text3 {
