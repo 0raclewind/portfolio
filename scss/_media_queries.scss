@@ -22,11 +22,6 @@
                 left: -150px;
             }
 
-            .cta {
-                left: 650px;
-                top: 400px;
-            }
-
             .hexagons {
                 top: 300px;
                 left: 200px;
@@ -100,11 +95,6 @@
                 img {
                     height: 500px;
                 }
-            }
-
-            .cta {
-                left: 500px;
-                top: 350px;
             }
 
             .hexagons {
@@ -197,42 +187,45 @@
         }
 
         .hero {
-            height: 400px;
-            margin-top: 70px;
+            height: 95vh;
+            margin-top: 5vh;
+            
 
             .hero-text {
-                font-size: 26px;
-                width: 90%;
-                max-width: 400px;
+                font-size: 40px;
+                max-width: 600px;
 
                 .text3 {
                     margin-top: 14px;
                 }
+                
+                .cta {
+                    right: 50%;
+                    transform: translateX(50%);
+                    font-size: 18px;
+                    padding: 8px 20px;
+                    bottom: -10vh;
+                }
             }
 
-            .cta {
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 14px;
-                top: 200px;
-                padding: 8px 20px;
-            }
 
             .hero-svg {
-                top: 250px;
-                left: -40px;
+                position: absolute;
+                top: 35vh;
+                left: 50%;
+                transform: translateX(-50%);
 
                 img {
-                    height: 270px;
+                    height: 570px;
                 }
             }
 
             .hexagons {
-                left: 40px;
-                top: 370px;
+                left: 60px;
+                top: 400px;
 
                 img {
-                    width: 800px;
+                    width: 1800px;
                 }
             }
         }
@@ -368,6 +361,18 @@
 
         i {
             font-size: 20px;
+        }
+    }
+}
+
+// Mid sized devices correction
+@media only screen and (max-width: 560px) {
+    .home {
+        .hero {
+            .hero-text {
+                width: 90%;
+                font-size: 36px;
+            }
         }
     }
 }
