@@ -144,6 +144,38 @@
     }
 }
 
+// Large tablets
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .home {
+        .hero {
+            .hero-text {
+                .cta {
+                    right: 50%;
+                    transform: translateX(50%);
+                    font-size: 30px;
+                    padding: 12px 30px;
+                    bottom: -10vh;
+                }
+            }
+
+            .hero-svg {
+                position: absolute;
+                top: 30vh;
+                left: 50%;
+                transform: translateX(-50%);
+
+                img {
+                    height: 770px;
+                }
+            }
+
+            .hexagons {
+                width: 2800px;
+            }
+        }
+    }
+}
+
 /* Medium devices (Tablets up to 768px) */
 @media only screen and (max-width: 768px) {
     h1 {
@@ -192,12 +224,8 @@
             
 
             .hero-text {
-                font-size: 40px;
+                font-size: 44px;
                 max-width: 600px;
-
-                .text3 {
-                    margin-top: 14px;
-                }
                 
                 .cta {
                     right: 50%;
@@ -365,13 +393,19 @@
     }
 }
 
-// Mid sized devices correction
+// Mid sized devices between tablet and phone correction
 @media only screen and (max-width: 560px) {
     .home {
         .hero {
             .hero-text {
                 width: 90%;
                 font-size: 36px;
+            }
+
+            .hero-svg {
+                img {
+                    height: 500px;
+                }
             }
         }
     }
@@ -383,14 +417,98 @@
         nav {
             .links {
                 justify-content: right;
+
                 .desktop-link {
                     display: none;
+                }
+            }
+        }
+
+        .hero {
+            .hero-text {
+                font-size: 30px;
+            }
+
+            .cta {
+                width: 200px;
+                text-align: center;
+            }
+
+            .hero-svg {
+                img {
+                    height: 450px;
+                }
+            }
+
+            .hexagons {
+                left: 0px;
+                top: 290px;
+                
+                img {
+                    width: 1500px;
                 }
             }
         }
     }
 }
 
+// Very small devices
+@media only screen and (max-width: 340px) {
+    .home {
+        nav {
+            height: 50px;
+
+            .brand {
+                height: 30px;
+                img {
+                    height: 30px;
+                }
+            }
+
+            .links {
+                height: 30px;
+
+                .fa-github {
+                    height: 24px;
+                    font-size: 24px;
+                }
+            }
+
+
+        }
+
+        .hero {
+            .hero-text {
+                font-size: 24px;
+                top: 30px;
+
+                .text2, .text3 {
+                    margin-top: 14px;
+                }
+
+                .cta {
+                    width: 160px;
+                    font-size: 14px;
+                }
+            }
+
+            .hero-svg {
+                img {
+                    height: 300px;
+                }
+            }
+
+            .hexagons {
+                top: 150px;
+                left: 0;
+
+                img {
+                    width: 1000px;
+                }
+            }
+        }
+    }
+}
 
 
 // // Small laptops height fix
