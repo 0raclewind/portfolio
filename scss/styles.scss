@@ -176,7 +176,7 @@ h3 {
     .project {
         background-color: #eee;
         padding: 10px 40px 0 40px;
-        width: 934px;
+        max-width: 934px;
         display: grid;
         column-gap: 5%;
         grid-template-areas: 
@@ -198,8 +198,9 @@ h3 {
         .image {
             grid-area: image;
             text-align: center;
+            width: 100%;
             img {
-                width: 400px;
+                width: 100%;
             }
         }
         
@@ -210,7 +211,7 @@ h3 {
         
         .buttons {
             display: flex;
-            width: 340px;
+            max-width: 340px;
             justify-content: space-between;
             align-items: center;
             grid-area: buttons;
@@ -252,7 +253,6 @@ h3 {
         .notice {
             grid-area: notice;
             color: #c36b18;
-            margin-left: 20px;
             font-size: 14px;
         }
         
@@ -292,7 +292,7 @@ h3 {
     }
 
     .about-me, .contact {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 50px 160px;
     }
@@ -306,7 +306,6 @@ h3 {
             letter-spacing: 1.5px;
             line-height: 40px;
         }
-
     }
 
     .contact form {
@@ -328,6 +327,7 @@ h3 {
             color: #fff;
             font-family: 'Poppins';
             border-radius: 10px;
+            width: 100%;
 
             &:focus {
                 outline: none;
@@ -355,20 +355,19 @@ h3 {
             border-radius: 10px;
         }
 
-        .name {
-            width: 423px;
+        .name-group {
+            max-width: 50%;
         }
 
-        .email {
-            width: 583px;
+        .email-group {
+            max-width: 60%;
         }
 
-        .subject {
-            width: 747px;
+        .subject-group {
+            max-width: 70%;
         }
 
         .message {
-            width: 868px;
             height: 246px;
             padding: 20px 30px;
             resize: none;
