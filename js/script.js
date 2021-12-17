@@ -36,7 +36,7 @@ tl.to("#cog", {
         opacity: 1,
         transform: "translateX(0px)",
         duration: 0.5
-    })
+    }, "-=.2")
     .to('.text2', {
         transform: "scale(1)",
         opacity: 1,
@@ -53,8 +53,8 @@ tl.to("#cog", {
     .from('.hero-svg img', {
         opacity: 0,
         transform: "translate(48%)"
-    }, "-=.2")
+    }, "-=.5")
     .from('.hexagons', {
         opacity: 0,
-        left: 300
-    }, "-=.2")
+        transform: "translate(-200px)"
+    }, "-=.5")
