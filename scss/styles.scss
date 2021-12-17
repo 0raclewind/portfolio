@@ -66,36 +66,40 @@ h3 {
         justify-content: space-between;
         align-items: center;
         z-index: 5;
-        max-width: 1400px;
+        max-width: 1440px;
         padding: 0 50px;
         left: 50%;
         transform: translateX(-50%);
 
-        .brand svg {
-            transform: translate(calc(50vw - 50%), calc(50vh - 50%)) scale(2);
-            opacity: 1;
-
-            #cog {
-                transform-origin: center;
-                transform-box: fill-box;
-                transform: translate(123px, 38px) rotate(60deg) scale(0);
-            }
-              
-            #name {
-                clip-path: polygon(
-                    100% 0,
-                    100% 0,
-                    100% 100%,
-                    100% 100%,
-                    100% 85%,
-                    100% 65%,
-                    100% 35%,
-                    100% 15%
-                    );
-            }
-            
-            #code {
-                clip-path: circle(75% at 200% 50%);
+        .brand {
+            svg {
+                transform: translate(calc(720px - 50px - 50%), calc(50vh - 60px - 50%)) scale(2);
+                opacity: 1;
+                height: 80px;
+                width: auto;
+    
+                #cog {
+                    transform-origin: center;
+                    transform-box: fill-box;
+                    transform: translate(123px, 38px) rotate(60deg) scale(0);
+                }
+                  
+                #name {
+                    clip-path: polygon(
+                        100% 0,
+                        100% 0,
+                        100% 100%,
+                        100% 100%,
+                        100% 85%,
+                        100% 65%,
+                        100% 35%,
+                        100% 15%
+                        );
+                }
+                
+                #code {
+                    clip-path: circle(75% at 200% 50%);
+                }
             }
         }
 
@@ -190,10 +194,11 @@ h3 {
         
         .hexagons {
             z-index: 1;
-            width: 1900px;
+            width: 2200px;
             top: 315px;
             left: 400px;
             opacity: 0.1;
+            transform: translateX(0px);
         }
     }
 
@@ -390,6 +395,7 @@ h3 {
             transition: 300ms ease-in-out;
             background-color: $darkBlue;
             border-radius: 10px;
+            pointer-events: none;
         }
 
         .name-group {
