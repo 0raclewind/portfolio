@@ -213,114 +213,131 @@ h3 {
     h1 {
         color: #7a7a7a;
         margin-bottom: 30px;
+        opacity: 0;
+        transform: translateY(-50px);
     }
     
-    .project {
-        background-color: #eee;
-        padding: 10px 40px 0 40px;
-        max-width: 934px;
-        display: grid;
-        column-gap: 5%;
-        grid-template-areas: 
-        "title image"
-        "description image"
-        "buttons image"
-        "notice image";
-        grid-template-columns: 50% 45%;
-        grid-template-rows: 30% 45% 15% 10%; 
-        border-radius: 30px;
-        margin-bottom: 70px;
-        position: relative;
-        margin-left: auto;
-        
-        h2 {
-            grid-area: title;
-        }
-        
-        .image {
-            grid-area: image;
-            text-align: center;
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-        
-        .description {
-            font-size: 19px;
-            grid-area: description;
-        }
-        
-        .buttons {
-            display: flex;
-            max-width: 340px;
-            justify-content: space-between;
-            align-items: center;
-            grid-area: buttons;
-        }
-        
-        .live-preview {
-            background-color: $ctaColor;
-            width: 196px;
-            text-align: center;
-            font-size: 19px;
-            letter-spacing: 1px;
-            padding: 6px 0;
-            color: #fff;
-            border-radius: 10px;
-            text-decoration: none;
-            &:hover {
-                background-color: $lightBlue;
-            }
-        }
-        
-        .buttons i {
-            font-size: 32px;
-        }
-        
-        .fa-github {
-            color: #555;
-            &:hover {
-                color: #777;
-            }
-        }
-        
-        .fa-youtube {
-            color: #f31e1e;
-            &:hover {
-                color:  #ff4949;
-            }
-        }
+    .wrapper {
+        opacity: 0;
 
-        .notice {
-            grid-area: notice;
-            color: #c36b18;
-            font-size: 14px;
+        .project {
+            background-color: #eee;
+            padding: 10px 40px 0 40px;
+            max-width: 934px;
+            display: grid;
+            column-gap: 5%;
+            grid-template-areas: 
+            "title image"
+            "description image"
+            "buttons image"
+            "notice image";
+            grid-template-columns: 50% 45%;
+            grid-template-rows: 30% 45% 15% 10%; 
+            border-radius: 30px;
+            margin-bottom: 70px;
+            position: relative;
+            margin-left: auto;
+            
+            h2 {
+                grid-area: title;
+            }
+            
+            .image {
+                grid-area: image;
+                text-align: center;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .description {
+                font-size: 19px;
+                grid-area: description;
+            }
+            
+            .buttons {
+                display: flex;
+                max-width: 340px;
+                justify-content: space-between;
+                align-items: center;
+                grid-area: buttons;
+            }
+            
+            .live-preview {
+                background-color: $ctaColor;
+                width: 196px;
+                text-align: center;
+                font-size: 19px;
+                letter-spacing: 1px;
+                padding: 6px 0;
+                color: #fff;
+                border-radius: 10px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $lightBlue;
+                }
+            }
+            
+            .buttons i {
+                font-size: 32px;
+            }
+            
+            .fa-github {
+                color: #555;
+                &:hover {
+                    color: #777;
+                }
+            }
+            
+            .fa-youtube {
+                color: #f31e1e;
+                &:hover {
+                    color:  #ff4949;
+                }
+            }
+    
+            .notice {
+                grid-area: notice;
+                color: #c36b18;
+                font-size: 14px;
+            }
+            
+            .footer {
+                position: absolute;
+                bottom: -34px;
+                background-color: $lightBlue;
+                color: #eee;
+                width: 100%;
+                height: 100px;
+                text-align: center;
+                font-size: 18px;
+                padding-top: 70px;
+                z-index: -1;
+                border-radius: 30px;
+            }
         }
         
-        .footer {
-            position: absolute;
-            bottom: -34px;
-            background-color: $lightBlue;
-            color: #eee;
-            width: 100%;
-            height: 100px;
-            text-align: center;
-            font-size: 18px;
-            padding-top: 70px;
-            z-index: -1;
-            border-radius: 30px;
-        }
     }
     
-    .project:nth-child(even) {
-        margin-left: 0;
-        grid-template-columns: 45% 50%;
-        grid-template-areas: 
-        "image title"
-        "image description"
-        "image buttons"
-        "image notice";
+    .wrapper:nth-child(even) {
+        .project {
+            margin-left: 0;
+            grid-template-columns: 45% 50%;
+            grid-template-areas: 
+            "image title"
+            "image description"
+            "image buttons"
+            "image notice";
+        }
+    }
+
+    .first, .third {
+        transform: translateX(200px);
+    }
+
+    .second {
+        transform: translateX(-200px);
     }
 }
 
@@ -341,6 +358,8 @@ h3 {
 
     .about-me {
         padding-bottom: 0;
+        transform: translateX(200px);
+        opacity: 0;
 
         .text {
             font-size: 20px;
@@ -350,88 +369,93 @@ h3 {
         }
     }
 
-    .contact form {
-        display: flex;
-        flex-direction: column;
+    .contact {
+        transform: translateX(-200px);
+        opacity: 0;
 
-        .input-group {
-            position: relative;
-        }
-
-        input, textarea {
-            height: 50px;
-            background-color: $darkBlue;
-            border: none;
-            margin-bottom: 24px;
-            border-radius: 10px;
-            padding: 20px 0 5px 30px;
-            font-size: 20px;
-            color: #fff;
-            font-family: 'Poppins';
-            border-radius: 10px;
-            width: 100%;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:focus ~ label, &:valid ~ label {
-                color: $ctaColor;
-                font-size: 18px;
-                top: -10px;
-                left: 0px;
-                font-weight: 500;
-                padding: 0 20px;
-            }
-        }
-
-        label {
-            position: absolute;
-            top: 10px; 
-            left: 30px;
-            color: #fff6;
-            font-size: 22px;
-            font-weight: 500;
-            transition: 300ms ease-in-out;
-            background-color: $darkBlue;
-            border-radius: 10px;
-            pointer-events: none;
-        }
-
-        .name-group {
-            max-width: 50%;
-        }
-
-        .email-group {
-            max-width: 60%;
-        }
-
-        .subject-group {
-            max-width: 70%;
-        }
-
-        .message {
-            height: 246px;
-            padding: 20px 30px;
-            resize: none;
-        }
-
-        button {
-            background-color: $ctaColor;
-            border-radius: 10px;
-            height: 40px;
-            width: 120px;
-            font-size: 20px;
+        form {
             display: flex;
-            font-weight: 600;
-            justify-content: space-evenly;
-            align-items: center;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $lightBlue;
+            flex-direction: column;
+    
+            .input-group {
+                position: relative;
+            }
+    
+            input, textarea {
+                height: 50px;
+                background-color: $darkBlue;
+                border: none;
+                margin-bottom: 24px;
+                border-radius: 10px;
+                padding: 20px 0 5px 30px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Poppins';
+                border-radius: 10px;
+                width: 100%;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                &:focus ~ label, &:valid ~ label {
+                    color: $ctaColor;
+                    font-size: 18px;
+                    top: -10px;
+                    left: 0px;
+                    font-weight: 500;
+                    padding: 0 20px;
+                }
+            }
+    
+            label {
+                position: absolute;
+                top: 10px; 
+                left: 30px;
+                color: #fff6;
+                font-size: 22px;
+                font-weight: 500;
+                transition: 300ms ease-in-out;
+                background-color: $darkBlue;
+                border-radius: 10px;
+                pointer-events: none;
+            }
+    
+            .name-group {
+                max-width: 50%;
+            }
+    
+            .email-group {
+                max-width: 60%;
+            }
+    
+            .subject-group {
+                max-width: 70%;
+            }
+    
+            .message {
+                height: 246px;
+                padding: 20px 30px;
+                resize: none;
+            }
+    
+            button {
+                background-color: $ctaColor;
+                border-radius: 10px;
+                height: 40px;
+                width: 120px;
+                font-size: 20px;
+                display: flex;
+                font-weight: 600;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: $lightBlue;
+                }
             }
         }
     }

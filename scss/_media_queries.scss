@@ -81,35 +81,37 @@
 
     .portfolio {
 
-        .project {
-            max-width: 663px;
-            padding: 8px 20px 0 20px;
-
-            .description {
-                font-size: 14px;
-            }
-
-            .buttons {
-                max-width: 280px;
-
-                .live-preview {
-                    width: 145px;
+        .wrapper {
+            .project {
+                max-width: 663px;
+                padding: 8px 20px 0 20px;
+    
+                .description {
                     font-size: 14px;
                 }
-
-                i {
-                    font-size: 28px;
+    
+                .buttons {
+                    max-width: 280px;
+    
+                    .live-preview {
+                        width: 145px;
+                        font-size: 14px;
+                    }
+    
+                    i {
+                        font-size: 28px;
+                    }
                 }
-            }
-
-            .notice {
-                font-size: 12px;
-            }
-
-            .footer {
-                font-size: 14px;
-                bottom: -25px;
-                padding-top: 77px;
+    
+                .notice {
+                    font-size: 12px;
+                }
+    
+                .footer {
+                    font-size: 14px;
+                    bottom: -25px;
+                    padding-top: 77px;
+                }
             }
         }
     }
@@ -233,14 +235,16 @@
     .portfolio {
         max-width: 100%;
         
-        .project {
-            .image {
-                place-self: center;
-            }
-
-            .notice {
-                margin-top: 2px;
-                font-size: 11px;
+        .wrapper {
+            .project {
+                .image {
+                    place-self: center;
+                }
+    
+                .notice {
+                    margin-top: 2px;
+                    font-size: 11px;
+                }
             }
         }
     }
@@ -354,53 +358,55 @@
     .portfolio {
         padding: 30px 40px;
 
-        .project {
-            grid-template-areas: 
-                "image"
-                "title"
-                "description"
-                "buttons"
-                "notice" !important;
-            grid-template-columns: 100% !important;
-            grid-template-rows: 2fr 1fr 2fr 1fr !important;
-            width: 100%;
-            max-width: 320px;
-            padding: 8px 15px;
-            height: 420px;
-            border-radius: 15px;
-
-            h2 {
-                grid-area: title;
-                margin-top: 0;
-            }
-
-            .image {
-                grid-area: image;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .description {
-                grid-area: description;
-            }
-
-            .buttons {
-                grid-area: buttons;
-                width: 250px;
-            }
-
-            .notice {
-                grid-area: notice;
-                font-size: 11px;
-            }
-
-            .footer {
-                font-size: 9px;
+        .wrapper {
+            .project {
+                grid-template-areas: 
+                    "image"
+                    "title"
+                    "description"
+                    "buttons"
+                    "notice" !important;
+                grid-template-columns: 100% !important;
+                grid-template-rows: 2fr 1fr 2fr 1fr !important;
+                width: 100%;
+                max-width: 320px;
+                padding: 8px 15px;
+                height: 420px;
                 border-radius: 15px;
-                bottom: -18px;
-                padding-top: 84px;
+    
+                h2 {
+                    grid-area: title;
+                    margin-top: 0;
+                }
+    
+                .image {
+                    grid-area: image;
+    
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .description {
+                    grid-area: description;
+                }
+    
+                .buttons {
+                    grid-area: buttons;
+                    width: 250px;
+                }
+    
+                .notice {
+                    grid-area: notice;
+                    font-size: 11px;
+                }
+    
+                .footer {
+                    font-size: 9px;
+                    border-radius: 15px;
+                    bottom: -18px;
+                    padding-top: 84px;
+                }
             }
         }
     }
