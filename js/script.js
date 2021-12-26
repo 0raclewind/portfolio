@@ -57,4 +57,43 @@ tl.to("#cog", {
     .from('.hexagons', {
         opacity: 0,
         transform: "translate(-200px)"
-    }, "-=.5")
+    }, "-=.5");
+
+gsap.to(".portfolio h1", {
+    scrollTrigger: {
+        trigger: ".portfolio h1",
+        start: "bottom 80%"
+    },
+    transform: "translateY(0px)",
+    opacity: 1
+});
+
+gsap.utils.toArray(".wrapper").forEach((project) => {
+    gsap.to(project, {
+        scrollTrigger: {
+            trigger: project,
+            start: "center 80%"
+        },
+        transform: "translateX(0px)",
+        opacity: 1
+    });
+});
+
+gsap.to(".about-me", {
+    scrollTrigger: {
+        trigger: '.about-me',
+        start: "center 80%"
+    },
+    transform: "translateX(0px)",
+    opacity: 1
+});
+
+gsap.to(".contact", {
+    scrollTrigger: {
+        trigger: '.contact',
+        start: "center 80%"
+    },
+    transform: "translateX(0px)",
+    opacity: 1
+});
+
