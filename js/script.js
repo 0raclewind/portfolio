@@ -107,11 +107,33 @@ function sendEmail() {
 
     emailjs.send('service_zmqkg6o', 'template_baf4trk', params)
         .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
+            showEmailMsg(".successMsg");
+            clearInput();
         }, function (error) {
-            console.log('FAILED...', error);
+            showEmailMsg(".errorMsg");
+            clearInput();
         });
 }
+
+function showEmailMsg(window) {
+    var window = document.querySelector(window);
+    window.style.transform = "translate(-50%, -50%) scale(1)";
+    window.style.opacity = "1";
+}
+
+function clearInput() {
+    document.getElementById("contactName").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("msg").value = "";
+}
+
+function hide() {
+    document.querySelectorAll(".popup").forEach(window => {
+        window.style.transform = "translate(-50%, -50%) scale(0)";
+    })
+}
+
 
 document.querySelector(".contact form").addEventListener('submit', (e) => {
     e.preventDefault();
