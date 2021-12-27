@@ -528,17 +528,24 @@
         }
     }
 
-    // .scroll-top {
-    //     bottom: 20px;
-    //     right: 20px;
-    //     width: 30px;
-    //     height: 30px;
-    //     padding: 3px;
+    .successMsg, .errorMsg {
+        width: 320px;
+        font-size: 14px;
+        padding: 30px;
 
-    //     i {
-    //         font-size: 18px;
-    //     }
-    // }
+        .icon {
+            font-size: 60px;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+
+        .button {
+            font-size: 14px;
+            width: 160px;
+        }
+    }
 }
 
 // Very small devices
