@@ -97,3 +97,23 @@ gsap.to(".contact", {
     opacity: 1
 });
 
+function sendEmail() {
+    var params = {
+        name: document.getElementById("contactName").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("msg").value
+    }
+
+    emailjs.send('service_zmqkg6o', 'template_baf4trk', params)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+            console.log('FAILED...', error);
+        });
+}
+
+document.querySelector(".contact form").addEventListener('submit', (e) => {
+    e.preventDefault();
+    sendEmail();
+});
