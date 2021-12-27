@@ -143,19 +143,19 @@
       <h1>Get in touch</h1>
       <form>
         <div class="input-group name-group">
-          <input type="text" class="name" required>
+          <input type="text" class="name" id="contactName" required>
           <label>Name</label>
         </div>
         <div class="input-group email-group">
-          <input type="text" class="email" required>
+          <input type="text" class="email" id=email required>
           <label>Email</label>
         </div>
         <div class="input-group subject-group">
-          <input type="text" class="subject" required>
+          <input type="text" class="subject" id=subject required>
           <label>Subject</label>
         </div>
         <div class="input-group">
-          <textarea class="message" name="message" cols="30" rows="10" required></textarea>
+          <textarea class="message" name="message" id=msg cols="30" rows="10" required></textarea>
           <label>Message</label>
         </div>
         <button type="submit"><i class="fas fa-paper-plane"></i>SEND</button>
@@ -188,6 +188,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("user_lTryAXY5beNjhtWHYB0NM");
+    })();
+  </script>
   <script src="./js/script.js"></script>
 </body>
 
