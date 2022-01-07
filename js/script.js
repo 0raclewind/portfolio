@@ -5,7 +5,7 @@ $('a[href*=\\#]').on('click', function (event) {
 
 var tl = gsap.timeline();
 var nameClip = "polygon(-20% 0, 100% 0, 100% 100%, -20% 100%, -17% 80%, -13% 65%, -13% 35%, -17% 20%)";
-var codeClip = "circle(75% at 50% 50%)";
+var codeClip = "circle(100% at 100% 100%)";
 
 tl.to("#cog", {
     duration: 0.6,
